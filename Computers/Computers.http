@@ -1,0 +1,13 @@
+@Computers_HostAddress = http://localhost:5048
+
+#if (EnableOpenAPI)
+GET {{Computers_HostAddress}}/openapi/v1.json
+Accept: application/json
+
+###
+#endif
+
+GET {{Computers_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
